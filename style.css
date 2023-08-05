@@ -74,6 +74,10 @@ main {
   font-size: 1.2rem;
 }
 
+.works {
+  text-align: center;
+}
+
 /* Add the following styles to create the gradient button */
 .gradient-button {
   display: inline-block;
