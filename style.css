@@ -58,6 +58,11 @@ main {
   padding: 10px 75px;
 }
 
+.section:nth-child(even) {
+  background: rgb(230, 230, 255);
+  color: #1f1f1f;
+}
+
 .section_header {
   text-align: center;
   margin: 35px 0 35px 0;
@@ -67,4 +72,35 @@ main {
 .section_desc {
   margin-bottom: 20px;
   font-size: 1.2rem;
+}
+
+/* Add the following styles to create the gradient button */
+.gradient-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    75deg,
+    rgb(210, 0, 0) 40%,
+    #fff 60%,
+    #ff9500 65%
+  );
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-position 0.2s ease-out;
+  background-position: 0% 50%;
+}
+
+/* Additional styles to improve button appearance on hover */
+.gradient-button:hover {
+  background-position: 100% 50%;
+}
+
+.link-list {
+  padding: 25px;
 }
