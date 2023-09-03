@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "title":"A New Frontier",
+    "body":"Once upon a time, something cool happened. The End."
+  },
+  {
+    "id":2,
+    "title":"Afro Mania",
+    "body":"Sometimes a dude's just gotta let his fro loose."
+  },
+  {
+    "id":3,
+    "title":"An Old Frontier",
+    "body":"Once upon a time, nothing happened... Sad."
+  },
+  {
+    "id":4,
+    "title":"Sansational",
+    "body":"It's a beautiful day outside... Birds are singing... Flowers are blooming..."
+  }
+]
