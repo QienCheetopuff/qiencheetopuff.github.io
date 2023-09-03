@@ -2,3 +2,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.json -f
 RewriteRule ^([^/]+)/?$ $1.json [L]
+
+AddType application/json .json
