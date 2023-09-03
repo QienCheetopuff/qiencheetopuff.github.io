@@ -6,13 +6,15 @@ const postList = document.querySelector("ul");
 
 async function fetchPosts() {
   try {
-    const responseData = await axios.get("/posts");
-    const listOfPosts = responseData;
+    const response = await axios.get("https://qiencheetopuff.github.io/posts");
+
+    console.log(response);
+    const listOfPosts = response.data;
     for (const post of listOfPosts) {
       const postEl = document.importNode(postTemplate.content, true);
+      postEl.querySelector("li").id = post.id;
       postEl.querySelector("h2").textContent = post.title.toUpperCase();
       postEl.querySelector("p").textContent = post.body;
-      postEl.querySelector("li").id = post.id;
       listElement.append(postEl);
     }
   } catch (error) {
