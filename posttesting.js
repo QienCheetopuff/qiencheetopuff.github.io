@@ -6,7 +6,9 @@ const postList = document.querySelector("ul");
 
 async function fetchPosts() {
   try {
-    const response = await axios.get("https://qiencheetopuff.github.io/posts");
+    const response = await axios.get(
+      "https://qiencheetopuff.github.io/posts.json"
+    );
 
     console.log(response);
     const listOfPosts = response.data;
